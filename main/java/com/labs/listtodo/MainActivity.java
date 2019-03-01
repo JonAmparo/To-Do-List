@@ -83,14 +83,12 @@ public class MainActivity extends AppCompatActivity {
         final LayoutInflater inflater = MainActivity.this.getLayoutInflater();
         final View containerView = inflater.inflate(R.layout.newtask, null);
 
-
         builder.setView(containerView);
         builder.setPositiveButton("ADD", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
 
                 try {
-
                     title = ((EditText) containerView.findViewById(R.id.title_id)).getText().toString();
                     description = ((EditText) containerView.findViewById(R.id.description_id)).getText().toString();
 
